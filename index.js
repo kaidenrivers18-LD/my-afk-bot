@@ -10,12 +10,12 @@ server.listen(process.env.PORT || 3000, () => {
     console.log('Web server running.');
 });
 
-// 2. YOUR EXACT MINECRAFT SERVER CONFIGURATION
+// 2. MINECRAFT SERVER CONFIGURATION (AUTO-DETECTING VERSION)
 const botArgs = {
     host: 'kaiquest15.aternos.me', 
     port: 40729,                     
     username: 'KaiQuestAFK',     
-    version: '1.26.3' // Hardcoded for your exact 26.3 PaperMC server
+    version: false // Changing this to false allows Mineflayer to auto-detect PaperMC's protocols!
 };
 
 function createBot() {
