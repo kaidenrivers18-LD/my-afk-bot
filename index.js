@@ -10,12 +10,12 @@ server.listen(process.env.PORT || 3000, () => {
     console.log('Web server running.');
 });
 
-// 2. MINECRAFT SERVER CONFIGURATION (AUTO-DETECTING VERSION)
+// 2. MINECRAFT SERVER CONFIGURATION WITH DYN IP BYPASS
 const botArgs = {
-    host: 'kaiquest15.aternos.me', 
+    host: 'smelt.aternos.host', // Your exact Dyn IP text from the popup window
     port: 40729,                     
     username: 'KaiQuestAFK',     
-    version: false // Changing this to false allows Mineflayer to auto-detect PaperMC's protocols!
+    version: false 
 };
 
 function createBot() {
